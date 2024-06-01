@@ -28,15 +28,9 @@ public class Jyanken_Chapter26 {
 		
 //		対戦相手のじゃんけんの手を乱数で選ぶ
 		public String getRandom() {
+			String[] handsPatern = {"r", "s", "p"};
 			int random = (int)Math.floor(Math.random() * 3);
-			String yourChoice = "";
-			
-			switch(random) {
-			case(0) -> yourChoice = "r";
-			case(1) -> yourChoice = "s";
-			case(2) -> yourChoice = "p";
-			}
-			
+			String yourChoice = handsPatern[random];
 			return yourChoice;
 		}
 		
